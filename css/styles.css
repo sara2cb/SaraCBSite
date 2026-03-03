@@ -10255,34 +10255,49 @@ section.resume-section .resume-section-content {
 {
   display: block;
 }
-
-#skills {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 95%;
+/* Container for the tags */
+.skill-group .gap-2 {
+    gap: 0.5rem !important;
 }
 
-#skills td, #customers th {
-  border: 1px solid #e9dcfa;
-  padding: 8px;
-  width: 100px;
+/* Individual Skill Badges */
+.badge-tag {
+    background-color: #f8f9fa;
+    color: #5400b4;
+    border: 1px solid #e0d6f2;
+    padding: 5px 14px;
+    border-radius: 50px; /* Capsule shape */
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
 }
 
-#skills tr:nth-child(even){background-color: #f5effd;}
-#skills tr:nth-child(odd){background-color: #e2d3fa;}
-
-#skills tr:hover {background-color: #e2d3fa;}
-#skillsFirst {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 95%;
-  table-layout:fixed;
+.badge-tag:hover {
+    background-color: #5400b4;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(84, 0, 180, 0.2);
 }
 
-#skillsFirst td, #customers th {
-  border: 1px solid #e9dcfa;
-  padding: 8px;
-  width: 100px;
+/* Platform Items styling */
+.platform-item {
+    font-weight: 700;
+    color: #343a40;
+    font-size: 0.95rem; /* Slightly larger */
+    display: flex;
+    align-items: center;
+    gap: 10px;          /* Space between the ICON and the TEXT */
+    padding: 5px 10px;  /* Internal padding for better click/hover area */
+    transition: color 0.2s ease;
 }
 
-#skillsFirst tr:nth-child(odd){background-color: #f5effd;}
+.platform-item i {
+    color: #5400b4;
+    font-size: 1.25rem; /* Larger icons for a more visual look */
+}
+
+/* Optional: Hover effect to make it interactive */
+.platform-item:hover {
+    color: #5400b4;
+}
+
