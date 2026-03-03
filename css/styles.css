@@ -10318,3 +10318,31 @@ section.resume-section .resume-section-content {
         white-space: normal;
     }
 }
+/* Smaller Game Cards for the single-line row */
+.game-card-small {
+    border: none;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.game-card-small:hover {
+    transform: translateY(-3px);
+}
+
+.game-card-small img {
+    aspect-ratio: 1 / 1; /* Square images look better when small and in a row */
+    object-fit: cover;
+}
+
+.game-title-small {
+    font-weight: 700;
+    font-size: 0.7rem; /* Smaller font to prevent wrapping */
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+/* Ensure No Man's Sky stays White */
+.text-white {
+    color: #ffffff !important;
+}
