@@ -10301,3 +10301,20 @@ section.resume-section .resume-section-content {
     color: #5400b4;
 }
 
+* Fix for date wrapping in resume sections */
+.resume-section-content .flex-shrink-1, 
+.resume-section-content .flex-shrink-0 {
+    min-width: 200px; /* Adjust this width based on your longest date */
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Ensure on mobile it still looks good */
+@media (max-width: 768px) {
+    .resume-section-content .flex-shrink-1, 
+    .resume-section-content .flex-shrink-0 {
+        min-width: auto;
+        text-align: left;
+        white-space: normal;
+    }
+}

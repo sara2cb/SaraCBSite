@@ -85,5 +85,13 @@
             $(this).hide();
         }
     });
+
+    // Add this inside your existing script for a cleaner toggle
+    $("#toggleAchievements").click(function() {
+        $("#olderAchievements").slideToggle(400);
+        $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+        var label = $(this).find('div');
+        label.text(label.text() == 'Show Less' ? 'Show Older Achievements' : 'Show Less');
+    });
 })(jQuery); // End of use strict
 
